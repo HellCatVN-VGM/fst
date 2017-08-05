@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body style="padding-top:60px;">
+	<div class="container">
+		<div class="panel panel-info">
+			<div class="panel-heading">Auto Share Posts</div>
+			<div class="panel-body">
+				* Nhập List Access Token:
+				<textarea class="form-control" id="access_token" rows="8"></textarea><br>
+				* Nhập ID bài viết:
+				<input type="text" class="form-control" id="id"><br>
+				* Nhập nội dung khi share - hỗ trợ spin:
+				<textarea class="form-control" id="message" rows="5"></textarea>
+				<br>
+				* Chọn loại share:
+				<select class="form-control" id="option">
+					<option value="wall">Share về tường</option>
+					<option value="friends">Share về tường bạn bè</option>
+				</select>
+				<hr>
+				Trạng thái: <b id="status">Đang chờ !</b>
+			</div>
+			<div class="panel-footer">
+				<div class="pull-left">
+					Done: <b style="font-size:30px;color:green;" id="done">0</b>
+					-
+					Fail: <b style="font-size:30px;color:red;" id="fail">0</b>
+				</div>
+				<div class="text-right">
+					<button class="btn btn-primary" id="btn" data-loading-text="Đang gửi ...">Send</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="sharetoken.js"></script>
+</body>
+</html>

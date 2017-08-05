@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+</head>
+<body style="padding-top: 50px;">
+	<div class="container">
+		<div class="panel panel-primary">
+			<div class="panel-heading">Đá tài khoản quảng cáo chưa có payment</div>
+			<div class="panel-body">
+				<input  id="access_token" class="form-control" placeholder="Nhập Access Token ...">
+				<div class="col-md-12 text-center" style="font-size: 50px;">
+					<div class="col-md-6" style="color: green" id="success">0</div>
+					<div class="col-md-6" style="color: red" id="error">0</div>
+				</div>
+			</div>
+			<div class="panel-footer">
+				<div class="text-center">
+					<button class="btn btn-primary" id="submit" data-loading-text="Đang gửi ...">Bắt đầu</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="adremove.js"></script>
+</body>
+</html>
