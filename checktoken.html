@@ -8,7 +8,7 @@
 <title>Check Token</title>
 
 <!-- Bootstrap CSS -->
-<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -107,9 +107,9 @@
 </div>
 
 <!-- jQuery -->
-<script src="http://code.jquery.com/jquery.js"></script>
+<script src="https://code.jquery.com/jquery.js"></script>
 <!-- Bootstrap JavaScript -->
-<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
 <script type="text/javascript">
 var LiveToken = new Array();
@@ -146,7 +146,7 @@ tbody += "<td class='text-center' style='font-weight: bold;'>" + stt + "</td>";
 tbody += "<td>" + token.substring(0,50) + " .......</td>";
 tbody += "<td class='location-" + token + "'></td>";
 tbody += "<td class='locale-" + token + "'></td>";
-tbody += "<td class='text-center' style='font-weight: bold; color: red'><img class='status-" + token + "' src='http://fc02.deviantart.net/fs71/i/2012/221/6/6/pixel_art_loading_icon_1_gif_by_qubodup-d5afav9.gif'></td>";
+tbody += "<td class='text-center' style='font-weight: bold; color: red'><img class='status-" + token + "' src='https://fc02.deviantart.net/fs71/i/2012/221/6/6/pixel_art_loading_icon_1_gif_by_qubodup-d5afav9.gif'></td>";
 tbody += "</tr>";
 checkToken(token);
 });
@@ -222,7 +222,7 @@ function(data) {
 liveaccount++;
 $('.live').text(liveaccount);
 $('#liveaccount').append(token + '\n');
-$('.status-' + token).attr('src', 'http://upload.wikimedia.org/wikipedia/commons/5/50/Yes_Check_Circle.svg');
+$('.status-' + token).attr('src', 'https://upload.wikimedia.org/wikipedia/commons/5/50/Yes_Check_Circle.svg');
 $(".locale-" + token).text(data.locale);
 if (data.location) {
 $(".location-" + token).text(data.location.name);
